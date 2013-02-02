@@ -1,0 +1,7 @@
+﻿Добавить шорт коды для трекеров
+
+function extra_style_shortcode( $atts, $content = null ) {
+return '
+<span style="color: blue; text-decoration: underline;">' . $content . '</span>';
+}
+add_shortcode('extra-style', 'extra_style_shortcode');
